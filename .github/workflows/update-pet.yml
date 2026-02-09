@@ -1,0 +1,55 @@
+name: 🐾 커밋펫 업데이트
+
+on:
+  # 매일 한국시간 오전 1시 (UTC 16:00) 자동 실행
+  schedule:
+    - cron: "0 16 * * *"
+  # 수동 실행 버튼
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: 📥 레포지토리 체크아웃
+        uses: actions/checkout@v4
+      
+      - name: 🟢 Node.js 설치
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      
+      - name: 📦 의존성 설치
+        run: npm ci
+      
+      - name: 🐾 커밋펫 SVG 생성
+        run: npm start
+        env:
+          GITHUB_TOKEN: ${{ secrets.PET_GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+      
+      - name: 📝 README에 SVG 삽입
+        run: |
+          if [ ! -f output/commit-pet.svg ]; then
+            echo "❌ SVG 파일이 생성되지 않았습니다."
+            exit 1
+          fi
+
+          # output/commit-pet.svg를 레포 루트로 복사
+          cp output/commit-pet.svg commit-pet.svg
+
+          # README에 이미지 태그가 없으면 추가
+          if ! grep -q "commit-pet.svg" README.md; then
+            sed -i '1a\\n<p align="center"><img src="./commit-pet.svg" alt="commit-pet" /></p>\n' README.md
+          fi
+      
+      - name: 🚀 변경사항 커밋 & 푸시
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add commit-pet.svg README.md
+          git diff --staged --quiet || git commit -m "🐾 커밋펫 상태 업데이트"
+          git push
