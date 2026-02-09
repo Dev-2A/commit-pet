@@ -1,7 +1,7 @@
-import { getCommitStats } from "./github.js";
-import { getPetState } from "./pet.js";
-import { renderSVG } from "./renderer.js";
-import { writeSVG } from "./writer.js";
+import { getCommitStats } from "../src/github.js";
+import { getPetState } from "../src/pet.js";
+import { renderSVG } from "../src/renderer.js";
+import { writeSVG } from "../src/writer.js";
 
 const stats = await getCommitStats(7);
 const state = getPetState(stats);

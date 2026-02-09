@@ -1,5 +1,5 @@
-import { getCommitStats } from "./github.js";
-import { getPetState, describeState } from "./pet.js";
+import { getCommitStats } from "../src/github.js";
+import { getPetState, describeState } from "../src/pet.js";
 
 const stats = await getCommitStats(7);
 const state = getPetState(stats);

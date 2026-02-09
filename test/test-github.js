@@ -1,4 +1,4 @@
-import { getCommitStats } from "./github.js";
+import { getCommitStats } from "../src/github.js";
 
 const stats = await getCommitStats(7);
 console.log("📊 커밋 통계:");

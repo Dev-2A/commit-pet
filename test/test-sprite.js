@@ -1,4 +1,4 @@
-import { getSprite } from "./sprites/index.js";
+import { getSprite } from "../src/sprites/index.js";
 
 const { pixels, palette } = getSprite("teen", "happy");
 
