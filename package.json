@@ -1,0 +1,13 @@
+{
+  "name": "commit-pet",
+  "version": "0.1.0",
+  "description": "🐾 GitHub 커밋 활동으로 성장하는 도트 캐릭터",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": ["github", "pet", "pixel-art", "svg", "readme"],
+  "author": "Dev-2A",
+  "license": "MIT",
+  "type": "module"
+}
