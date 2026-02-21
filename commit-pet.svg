@@ -6,7 +6,7 @@
   </style>
 
   <!-- 배경 -->
-  <rect width="184" height="224" rx="12" fill="#FFFBE6" />
+  <rect width="184" height="224" rx="12" fill="#FFF0E6" />
 
   <!-- 테두리 -->
   <rect width="184" height="224" rx="12" fill="none" stroke="#ddd" stroke-width="1" />
@@ -43,22 +43,22 @@
     <rect x="110" y="40" width="10" height="10" fill="#222222" />
     <rect x="20" y="50" width="10" height="10" fill="#222222" />
     <rect x="30" y="50" width="10" height="10" fill="#FFD966" />
-    <rect x="40" y="50" width="10" height="10" fill="#FFD966" />
+    <rect x="40" y="50" width="10" height="10" fill="#66BBFF" />
     <rect x="50" y="50" width="10" height="10" fill="#FFD966" />
     <rect x="60" y="50" width="10" height="10" fill="#FFD966" />
     <rect x="70" y="50" width="10" height="10" fill="#FFD966" />
     <rect x="80" y="50" width="10" height="10" fill="#FFD966" />
-    <rect x="90" y="50" width="10" height="10" fill="#FFD966" />
+    <rect x="90" y="50" width="10" height="10" fill="#66BBFF" />
     <rect x="100" y="50" width="10" height="10" fill="#FFD966" />
     <rect x="110" y="50" width="10" height="10" fill="#222222" />
     <rect x="20" y="60" width="10" height="10" fill="#222222" />
     <rect x="30" y="60" width="10" height="10" fill="#FFD966" />
-    <rect x="40" y="60" width="10" height="10" fill="#FFAACC" />
+    <rect x="40" y="60" width="10" height="10" fill="#FFD966" />
     <rect x="50" y="60" width="10" height="10" fill="#FFD966" />
-    <rect x="60" y="60" width="10" height="10" fill="#FF9933" />
+    <rect x="60" y="60" width="10" height="10" fill="#FFD966" />
     <rect x="70" y="60" width="10" height="10" fill="#FF9933" />
     <rect x="80" y="60" width="10" height="10" fill="#FFD966" />
-    <rect x="90" y="60" width="10" height="10" fill="#FFAACC" />
+    <rect x="90" y="60" width="10" height="10" fill="#FFD966" />
     <rect x="100" y="60" width="10" height="10" fill="#FFD966" />
     <rect x="110" y="60" width="10" height="10" fill="#222222" />
     <rect x="20" y="70" width="10" height="10" fill="#222222" />
@@ -108,8 +108,8 @@
   <!-- 상태 정보 -->
   <g transform="translate(12, 176)">
     
-    <text x="0" y="12" class="title">🐥 Lv.10 커밋펫</text>
-    <text x="0" y="30" class="value">😆 오늘 13커밋 · 2일 연속 · 주간 27커밋</text>
+    <text x="0" y="12" class="title">🐥 Lv.9 커밋펫</text>
+    <text x="0" y="30" class="value">😿 오늘 0커밋 · 2일 연속 · 주간 26커밋</text>
   
   </g>
   </svg>
