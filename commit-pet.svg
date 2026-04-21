@@ -132,8 +132,8 @@
   <!-- 상태 정보 -->
   <g transform="translate(12, 176)">
     
-    <text x="0" y="12" class="title">🐔 Lv.20 커밋펫</text>
-    <text x="0" y="30" class="value">😆 오늘 6커밋 · 1일 연속 · 주간 57커밋</text>
+    <text x="0" y="12" class="title">🐔 Lv.21 커밋펫</text>
+    <text x="0" y="30" class="value">😆 오늘 11커밋 · 2일 연속 · 주간 62커밋</text>
   
   </g>
   </svg>
